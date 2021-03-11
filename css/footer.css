@@ -1,0 +1,47 @@
+.foot {
+  background: linear-gradient(#FFC0CF, #ffd1dc);
+  border-radius: 40px 40px 0px 0px;
+  height: 100px;
+  /* margin-top:60px; */
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.foot .menu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-left: 20px;
+}
+
+.foot .menu li {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.foot li + li {
+  border-left: 1px solid white;
+  height: 20px;
+  padding: 0 10px;
+  margin-left: 2px;
+  padding-top: 10px;
+}
+
+.foot li:first-child {
+  padding-right: 15px;
+}
+
+.foot li:not(:first-child) {
+  padding: 0 15px;
+}
+
+.foot #slide-line {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #EF682C;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}

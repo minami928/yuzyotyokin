@@ -1,0 +1,38 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title 友情貯金
+    link(rel="stylesheet" href="css/new.css")
+    link(rel="stylesheet" href="css/ress.css")
+  body
+    li.back
+      a(href="index.html")
+        img(src="img/arrow1.png" alt="戻る")
+    p.hello
+      | はじめまして！
+      br
+      | あなたの情報をお教えください。
+    .mail
+      div
+        img(src="img/mail.png" alt="メールアドレス")
+      p メールアドレス
+    .text2
+      input(type="text" placeholder="")
+    .name
+      div
+        img(src="img/name.png" alt="名前")
+      p なまえ
+    .text2
+      input(type="text" placeholder="")
+    .pass
+      div
+        img(src="img/pass.png" alt="パスワード")
+      p PASS
+    .text2
+      input(type="text" placeholder="")
+    li#login
+      a(href="friend.html") 新規登録する
+      a.next(href="friend-list.html")
+        img(src="img/arrow.png" alt="次へ")

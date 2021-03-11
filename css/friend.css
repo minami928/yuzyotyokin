@@ -1,0 +1,198 @@
+@charset "UTF-8";
+body {
+  color: #97B3BC;
+}
+
+body .head {
+  display: flex;
+  padding: 16px 0 0 40px;
+}
+
+body h1 {
+  margin: 14px 50px 0 40px;
+  color: #97B3BC;
+  font-size: 1rem;
+}
+
+body .border {
+  border-bottom: #D4EAEC 1px solid;
+  width: 80%;
+  margin-left: 40px;
+}
+
+body .tuika {
+  float: left;
+}
+
+body .pro {
+  text-align: center;
+  margin-top: 20px;
+}
+
+body .pro p {
+  margin-top: 10px;
+  color: #97B3BC;
+}
+
+body .aa {
+  text-align: center;
+  padding-top: 10px;
+}
+
+body .aa .phote {
+  padding-left: 20px;
+}
+
+body .rireki {
+  margin-top: 10px;
+  color: #97B3BC;
+  text-align: center;
+}
+
+body .textbox {
+  border: #D4EAEC 3px solid;
+  width: 80%;
+  overflow: scroll;
+  height: 120px;
+  margin-left: 35px;
+  text-align: center;
+  color: #97B3BC;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+body .syotai {
+  background: #FFC0CF;
+  padding: 15px 0;
+  width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 128px;
+}
+
+body .syotai a {
+  color: white;
+}
+
+body .modal-wrapper {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -30;
+  padding: 40px 10px;
+  text-align: center;
+}
+
+body .modal-wrapper:not(:target) {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+body .modal-wrapper:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .4s, visibility .4s;
+}
+
+body .modal-wrapper::after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -.05em;
+  vertical-align: middle;
+  content: "";
+}
+
+body .modal-wrapper .modal-window {
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 20;
+  position: relative;
+  width: 90%;
+  height: 450px;
+  max-width: 600px;
+  padding: 30px 30px 15px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  vertical-align: middle;
+}
+
+body .modal-wrapper .modal-window .modal-content {
+  max-height: 80vh;
+  text-align: left;
+}
+
+body .modal-overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+body .modal-wrapper .modal-close {
+  z-index: 20;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+body .modal-wrapper .modal-close:hover {
+  color: #2b2e38 !important;
+}
+
+body .modal-content > p {
+  text-align: center;
+}
+
+body .modal-content > .time {
+  color: #97B3BC;
+  margin-top: 15px;
+  position: relative;
+}
+
+body .modal-content > .time:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 12px;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: #97B3BC;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
+}
+
+body .modal-content > .naiyou {
+  color: #FFC0CF;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+body .modal-content > .invite {
+  background: #FFC0CF;
+  border-radius: 9px;
+  width: 140px;
+  padding: 19px 16px;
+  margin-left: 70px;
+}
+
+body .modal-content > a {
+  text-decoration: none;
+  text-align: center;
+}

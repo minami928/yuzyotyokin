@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="34" viewBox="0 0 56 34">
+  <g id="グループ_8" data-name="グループ 8" transform="translate(-278 -29)">
+    <g id="plus-circle" transform="translate(294 28)">
+      <circle id="楕円形_4" data-name="楕円形 4" cx="10" cy="10" r="10" transform="translate(2 2)" fill="none" stroke="#97b3bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="線_4" data-name="線 4" y2="8" transform="translate(12 8)" fill="none" stroke="#97b3bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="線_5" data-name="線 5" x2="8" transform="translate(8 12)" fill="none" stroke="#97b3bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <text id="フレンド追加" transform="translate(278 62)" fill="#97b3bc" font-size="8" font-family="HiraMaruStd-W6, Hiragino Maru Gothic Std" letter-spacing="0.2em"><tspan x="0" y="0">フレンド追加</tspan></text>
+  </g>
+</svg>

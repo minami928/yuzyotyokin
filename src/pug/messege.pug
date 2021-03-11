@@ -1,0 +1,60 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="css/ress.css")
+    link(rel="stylesheet" href="css/bmesse.css")
+    title メッセージ
+  body
+    #your_container
+      // チャットの外側部分①
+      #bms_messages_container
+        .head
+          a(href="message-list.html")
+            img.back(src="img/back.svg" alt="戻るボタン")
+          h2 上垣　りお
+          a(href="#modal-01")
+            img.icon(src="img/tuuti.svg" alt="通知")
+          #modal-01.modal-wrapper
+            a.modal-overlay(href="#!")
+            .modal-window
+              .modal-content
+                p.time 日程
+                .border1
+                p.naiyou 2020/06/23
+                p.time 時間
+                .border1
+                p.naiyou 18:00 ~ 20:00
+                p.time 内容
+                .border1
+                p.naiyou 部屋の片づけを手伝って！
+                .wrap
+                  a.invite(href="#!") 招待を受ける
+                  a.decline(href="#!") ことわる
+              a.modal-close(href="#!")
+                img(src="img/tojiru.svg" alt="")
+          a(href="calendar.html")
+            img(src="img/calendar.svg" class="calendar,icon" alt="カレンダー")
+          .border
+        // タイムライン部分③
+        #bms_messages
+          // メッセージ１（左側）
+          .bms_message.bms_left
+            .bms_message_box
+              .bms_message_content
+                .bms_message_text 明日６時半集合でいいー？
+          .bms_clear
+          // 回り込みを解除（スタイルはcssで充てる）
+          // メッセージ２（右側）
+          .bms_message.bms_right
+            .bms_message_box
+              .bms_message_content
+                .bms_message_text いいよー
+          .bms_clear
+          // 回り込みを解除（スタイルはcssで充てる）
+        // テキストボックス、送信ボタン④
+        #bms_send
+          textarea#bms_send_message
+          #bms_send_btn
+            img(src="img/send.svg" alt="送信")

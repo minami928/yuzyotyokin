@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body {
+  background-image: url("../img/bgimg.jpg");
+}
+
+body .text1 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+body .logo {
+  text-align: center;
+  margin-bottom: -18px;
+}
+
+body .logo2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+body .back {
+  margin-top: 90px;
+  margin-left: 20px;
+}
+
+body p {
+  color: #FFFFFF;
+  font-family: 'ヒラギノ丸ゴ Std';
+  font-size: 1rem;
+}
+
+body .id {
+  display: flex;
+  margin-left: 75px;
+  margin-top: -15px;
+}
+
+body p {
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+body .text2 {
+  margin-left: 70px;
+  margin-top: 3px;
+  border: 1px solid #FFFFFF;
+  width: 63%;
+  height: 30px;
+  border-radius: 10px;
+}
+
+body .pass {
+  display: flex;
+  margin-left: 75px;
+  margin-top: 40px;
+}
+
+body input:focus {
+  outline: none;
+}
+
+body .next {
+  font-size: 1rem;
+  text-align: center;
+  margin-left: -25px;
+  text-decoration: none;
+}
+
+body .next2 {
+  margin-left: 235px;
+  margin-top: -24px;
+}
+
+body li {
+  list-style: none;
+}
+
+body .login {
+  margin-top: 40px;
+}
+
+body .login a {
+  text-decoration: none;
+}
+
+body input[type="text"] {
+  color: #ffffff;
+}
+
+body #login {
+  margin-top: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+body #login > a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'ヒラギノ丸ゴ Std';
+  font-size: 1rem;
+}
+
+body #login > a:nth-of-type(2) {
+  margin-left: 1rem;
+}

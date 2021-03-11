@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/bmesse.css">
+    <title>メッセージ</title>
+</head>
+<body>
+
+        <div id="your_container">
+    
+            <!-- チャットの外側部分① -->
+            <div id="bms_messages_container">
+    
+                <div class="head">
+                    <a href="message-list.html"><img src="img/back.svg" class="back" alt="戻るボタン"></a>
+                    <h2>上垣　りお</h2>
+                    <a href="#modal-01"><img src="img/tuuti.svg" class="icon" alt="通知"></a>
+                        <div class="modal-wrapper" id="modal-01">
+                            <a href="#!" class="modal-overlay"></a>
+                            <div class="modal-window">
+                                <div class="modal-content">
+                                    <p class="time">日程</p>
+                                    <div class="border1"></div>
+                                    <p class="naiyou">2020/06/23</p>
+                                    <p class="time">時間</p>
+                                    <div class="border1"></div>
+                                    <p class="naiyou">18:00 ~ 20:00</p>
+                                    <p class="time">内容</p>
+                                    <div class="border1"></div>
+                                    <p class="naiyou">部屋の片づけを手伝って！</p>
+                                    <div class="wrap">
+                                        <a href="#!" class="invite">招待を受ける</a>
+                                        <a href="#!" class="decline">ことわる</a>
+                                    </div>
+                                </div>
+                                <a href="#!" class="modal-close"><img src="img/tojiru.svg" alt=""></a>
+                            </div>
+                        </div>
+                    <a href="calendar.html"><img src="img/calendar.svg" class="calendar,icon" alt="カレンダー"></a>
+                    <div class="border"></div>
+                </div>
+
+                <!-- タイムライン部分③ -->
+                <div id="bms_messages">
+    
+                    <!--メッセージ１（左側）-->
+                    <div class="bms_message bms_left">
+                        <div class="bms_message_box">
+                            <div class="bms_message_content">
+                                <div class="bms_message_text">明日６時半集合でいいー？</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bms_clear"></div><!-- 回り込みを解除（スタイルはcssで充てる） -->
+    
+                    <!--メッセージ２（右側）-->
+                    <div class="bms_message bms_right">
+                        <div class="bms_message_box">
+                            <div class="bms_message_content">
+                                <div class="bms_message_text">いいよー</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bms_clear"></div><!-- 回り込みを解除（スタイルはcssで充てる） -->
+                </div>
+    
+                <!-- テキストボックス、送信ボタン④ -->
+                <div id="bms_send">
+                    <textarea id="bms_send_message"></textarea>
+                    <div id="bms_send_btn"><img src="img/send.svg" alt="送信"></div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>

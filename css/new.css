@@ -1,0 +1,106 @@
+body{
+    background: #FFD9E2;
+}
+.back{
+    margin-top:35px;
+    margin-left:20px;
+}
+
+.hello{
+    text-align:center;
+    background: #FFC0CF;
+    margin-left:-10px;
+    height:89px;
+    margin-top:30px;
+    padding-top:30px;
+    font-size:0.6rem;
+    line-height:17px;
+}
+
+p{
+    color:#FFFFFF;
+    font-family: 'ヒラギノ丸ゴ Std';
+    font-size:1rem;
+    margin-left:10px;
+    letter-spacing: 2px;
+    font-size:0.8rem;
+    margin-top:2px;
+}
+
+.mail{
+    display: flex;
+    margin-left:75px;
+    margin-top:50px;
+}
+
+.name{
+    display: flex;
+    margin-left:75px;
+    margin-top:30px;
+}
+
+
+.id{
+    display: flex;
+    margin-left:75px;
+    margin-top:30px;
+}
+
+.text2{
+    margin-left:70px;
+    margin-top:3px;
+    border: 1px solid #FFFFFF;
+    width:63%;
+    height:30px;
+    border-radius:10px;
+}
+
+.pass{
+    display: flex;
+    margin-left:75px;
+    margin-top:30px;
+}
+
+input:focus{
+    outline:none;
+   }
+
+.next{
+    font-size:1rem;
+    text-align: center;
+    margin-left:-25px;
+}
+
+.next2{
+    margin-left:235px;
+    margin-top:-24px;
+}
+
+li{
+    list-style: none;
+}
+
+#login{
+    margin-top:100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    }
+    
+    
+    #login>a{
+        text-decoration: none;
+        color:#FFFFFF;
+        font-family: 'ヒラギノ丸ゴ Std';
+        font-size:1rem;
+    
+    }
+    #login>a:nth-of-type(2){
+        margin-left: 1rem;
+    }
+    
+
+input[type="text"]{
+    color:#ffffff;
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36">
+  <g id="グループ_56" data-name="グループ 56" transform="translate(-254 -22)">
+    <rect id="長方形_3" data-name="長方形 3" width="35" height="36" rx="9" transform="translate(254 22)" fill="#ffd9e2"/>
+    <g id="bell" transform="translate(263 32)">
+      <path id="パス_19" data-name="パス 19" d="M12.167,5.6a3.667,3.667,0,0,0-7.333,0c0,4.2-1.833,5.4-1.833,5.4H14s-1.833-1.2-1.833-5.4" transform="translate(0 0)" fill="none" stroke="#ff8ca7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="パス_20" data-name="パス 20" d="M14.485,21a3.069,3.069,0,0,1-2.108.7A3.069,3.069,0,0,1,10.27,21" transform="translate(-3.717 -7.704)" fill="none" stroke="#ff8ca7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+.foot{
+    background: linear-gradient(#FFC0CF, #ffd1dc);
+    border-radius: 40px 40px 0px 0px;
+    height: 100px;
+    /* margin-top:60px; */
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding-left: 20px;
+     }
+     .menu li{
+         list-style: none;
+         margin-top: 30px;
+     }
+    
+     li+li{
+        border-left: 1px solid white;
+        height: 20px;
+        padding: 0 10px;
+        margin-left: 2px;
+        padding-top: 10px;
+    
+    }
+    li:first-child{
+        padding-right:15px ;
+    }
+    li:not(:first-child){
+        padding: 0 15px;
+    }
+      
+    
+    #slide-line{
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        background-color:#EF682C;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+      }
+    
+    
+}
+

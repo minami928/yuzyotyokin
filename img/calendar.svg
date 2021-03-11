@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36">
+  <g id="グループ_11" data-name="グループ 11" transform="translate(-148 -272)">
+    <g id="長方形_3" data-name="長方形 3" transform="translate(148 272)" fill="#d4eaec" stroke="#d4eaec" stroke-width="1">
+      <rect width="35" height="36" rx="9" stroke="none"/>
+      <rect x="0.5" y="0.5" width="34" height="35" rx="8.5" fill="none"/>
+    </g>
+    <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(160.031 283.25)">
+      <path id="パス_5" data-name="パス 5" d="M5.837,6h9.358a1.259,1.259,0,0,1,1.337,1.164V15.31a1.259,1.259,0,0,1-1.337,1.164H5.837A1.259,1.259,0,0,1,4.5,15.31V7.164A1.259,1.259,0,0,1,5.837,6Z" transform="translate(-4.5 -3.349)" fill="none" stroke="#aac3cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="パス_6" data-name="パス 6" d="M24,3V7.375" transform="translate(-15.311 -3)" fill="none" stroke="#aac3cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="パス_7" data-name="パス 7" d="M12,3V7.375" transform="translate(-8.658 -3)" fill="none" stroke="#aac3cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="パス_8" data-name="パス 8" d="M4.5,15H16.531" transform="translate(-4.5 -8.998)" fill="none" stroke="#aac3cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

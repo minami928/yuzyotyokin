@@ -1,0 +1,72 @@
+.head{
+    display: flex;
+    margin-top: 20px;
+
+}
+
+h3{
+    padding: 13px 60px 0 60px;
+    color: #97B3BC;
+}
+
+.border{
+    border-bottom: #D4EAEC 1px solid;
+    width: 80%;
+    margin-left: 40px;
+}
+
+.yazi{
+    padding-left: 35px;
+}
+
+.fukidasi{
+    margin-top: 7px;
+}
+
+main{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.foot{
+    background:linear-gradient(#FFC0CF, #ffd1dc);
+    border-radius: 40px 40px 0px 0px;
+    height: 100px;
+    /* margin-top:60px; */
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.menu{
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   padding-left: 20px;
+}
+.menu li{
+    list-style: none;
+    margin-top: 30px;
+}
+li+li{
+    border-left: 1px solid white;
+    height: 20px;
+    padding: 0 10px;
+    margin-left: 2px;
+    padding-top: 10px;
+
+}
+li:first-child{
+    padding-right:15px ;
+}
+li:not(:first-child){
+    padding: 0 15px;
+}
+
+.border1{
+    border-bottom: 3px solid #FF8CA7;
+    width: 20px;
+    margin-left: 18px;
+    border-radius: 70px;
+
+}

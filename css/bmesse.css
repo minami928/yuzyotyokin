@@ -1,0 +1,286 @@
+#your_container{
+    /* 高さや幅など、好きな様に設定
+    bms_messages_containerの方で、縦横いっぱいに広がってくれるので、
+    ここで充てた高さと横幅がそのままスタイルになる仕組み */
+
+    height:1000px;/*ここはご自由に*/
+    width: 100%;/*ここはご自由に*/
+}
+/* チャットの外側部分① */
+#bms_messages_container{
+    height: 100%;/*your_containerに対して100%になる */
+    width: 100%;/*your_containerに対して100%になる */
+    background-color: #fff;
+}
+
+.head{
+    position: fixed;
+    top: 0;
+    padding: 16px 41px 0 40px;
+    background: #fff;
+    width: 100%;
+}
+.back{
+    float: left;
+}
+h2{
+    float: left;
+    font-size: 16px;
+    color: #97B3BC;
+    margin: 14px 50px 0 40px;
+}
+.icon{
+    margin-top: 6px;
+}
+.calendar{
+    float: clear;
+}
+.border{
+    border-bottom: solid 1px #D4EAEC;
+    width: 80%;
+    margin-top: 16px;
+}
+.modal-wrapper {
+    z-index: 999;
+    position: fixed;
+    top: 1;
+    right: 0;
+    left: 0;
+    padding: 40px 10px;
+    text-align: center;
+}
+.modal-wrapper:not(:target) {
+    display:none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+.modal-wrapper:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s, visibility .4s;
+}
+.modal-wrapper::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    vertical-align: middle;
+    content: ""
+}
+.modal-wrapper .modal-window {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    width: 90%;
+    height: 450px;
+    max-width: 600px;
+    padding: 30px 30px 15px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    vertical-align: middle;
+}
+.modal-wrapper .modal-window .modal-content {
+    max-height: 80vh;
+    text-align: left;
+}
+.modal-overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.modal-wrapper .modal-close {
+    z-index: 20;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.modal-wrapper .modal-close:hover {
+    color: #2b2e38 !important;
+}
+.modal-content>p{
+    text-align: center;
+}
+.modal-content>.time{
+    color: #97B3BC;
+    margin-top: 15px;
+    position: relative;
+}
+.modal-content>.time:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -6px;/*線の上下位置*/
+    display: inline-block;
+    width: 12px;/*線の長さ*/
+    height: 1px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: #97B3BC;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+}
+.modal-content>.naiyou{
+    color: #FFC0CF;
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.wrap>.invite{
+    background: #FFC0CF;
+    border-radius: 9px;
+    width: 140px;
+    padding: 10px 12px;
+    text-align: center;
+    margin: -13px auto 15px;
+    text-decoration: none;
+    color: #fff;
+}
+.wrap>.decline{
+    background: #ECECEC;
+    border-radius: 9px;
+    width: 90px;
+    height: 40px;
+    padding: 10px 12px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    color: #B7B7B7;
+
+}
+.wrap{
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* タイムライン部分③ */
+#bms_messages {
+    margin-top: 80px;
+    width: 100%;
+    overflow: auto;/* スクロールを効かせつつ、メッセージがタイムラインの外に出ないようにする */
+    height:100%;/*テキストエリアが下に張り付く様にする*/
+    background-color: #fff;
+}
+    /* メッセージ全般のスタイル */
+    .bms_message {
+        margin: 0px;
+        padding: 0 14px;/*吹き出しがタイムラインの側面にひっつかない様に隙間を開ける*/
+        font-size: 16px;
+        word-wrap: break-word;/* 吹き出し内で自動で改行 */
+        white-space: normal;/*指定widthに合わせて、文字を自動的に改行*/
+    }
+    /* メッセージ１（左側） */
+    .bms_left {
+        float: left;/*吹き出しをbms_messagesに対して左寄せ*/
+        line-height: 1.3em;
+    }
+    /* メッセージ２（右側） */
+    .bms_right {
+        float: right;/*吹き出しをbms_messagesに対して右寄せ*/
+        line-height: 1.3em;
+    }
+    /* 回り込みを解除 */
+    .bms_clear {
+        clear: both; /* 左メッセージと右メッセージの回り込み(float)の効果の干渉を防ぐために必要（これが無いと、自分より下のメッセージにfloatが影響する） */
+
+    }
+
+/* テキストエリア、送信ボタン④ */
+#bms_send {
+    position: fixed;
+    bottom: 0;
+    width: 294px;
+    background: linear-gradient(#FFC0CF,#ffd1dc);/*タイムラインの色と同じにする*/
+    border-radius: 20px 20px 0 0;
+    height: 51px;
+    padding: 26px 41px 20px 40px;
+}
+    #bms_send_message{
+        background: #fff;
+        color: gray;
+        width: calc(100% - 75px);/*常に送信ボタンの横幅を引いたサイズに動的に計算*/
+        line-height: 16px;
+        width: 249px;
+        height: 45px;
+        padding: 14px 6px 0px 6px;/*文字がテキストエリアの中心になる様に隙間調整*/
+        border-radius: 8px 0 0 8px;/*角丸*/
+        text-align: left;/*文字を左寄せ*/
+        box-sizing: border-box;/*paddingとborderの要素の高さと幅の影響をなくす（要素に高さと幅を含める）*/
+
+    }
+    #bms_send_btn {
+        width: 45px;
+        height: 45px;
+        line-height: 3em;
+        position: fixed;
+        bottom: 26px;
+        right: 41px;
+        color: #fff;
+        font-weight: bold;
+        background: #FF8CA7;
+        text-align: center;/*文字をボタン中央に表示*/
+        border-radius: 0 8px 8px 0;/*角丸*/
+        box-sizing: border-box;/*paddingとborderの要素の高さと幅の影響をなくす（要素に高さと幅を含める）*/
+    }
+    #bms_send_btn>img {
+        margin-right: 11px;
+        margin-top: 8px;
+    }
+    #bms_send_btn:hover {
+        background: #ffabbe; /*マウスポインタを当てた時にアクティブな色になる*/
+        cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+    }
+
+    /* .bms_message {
+        ・・・
+    } */
+        /*
+         *追加
+         */
+        .bms_message_box{
+            margin-top: 20px;/*上下の吹き出しがひっつかない様に隙間を入れる*/
+            max-width: 100%;/*文字が長くなった時に吹き出しがタイムラインからはみ出さない様にする*/
+            font-size: 16px;
+        }
+            /*
+            *追加
+            */
+            .bms_message_content{
+                padding: 20px;/*文字や画像（コンテンツ）の外側に隙間を入れる*/
+            }
+
+        /* メッセージ１（左側） */
+        .bms_left {
+            float: left;/*吹き出しをbms_messagesに対して左寄せ*/
+            line-height: 1.3em;
+        }
+            /*
+            *追加
+            */
+            .bms_left .bms_message_box {
+                color: #AAC3CB;/*テキストを黒にする*/
+                background: #fff;
+                border: 2px solid #E5F2F3;
+                border-radius: 30px 30px 30px 0px;/*左下だけ尖らせて吹き出し感を出す*/
+                margin-right: 50px;/*左側の発言だとわかる様に、吹き出し右側に隙間を入れる*/
+            }
+
+        /* メッセージ２（右側） */
+        .bms_right {
+            float: right;/*吹き出しをbms_messagesに対して右寄せ*/
+            line-height: 1.3em;
+        }
+            /*
+            *追加
+            */
+            .bms_right .bms_message_box {
+                color: #AAC3CB;/*テキストを白にする*/
+                background: #E5F2F3;
+                border: 2px solid #E5F2F3;
+                border-radius: 30px 30px 0px 30px;/*右下だけ尖らせて吹き出し感を出す*/
+                margin-left: 50px;/*右側の発言だとわかる様に、吹き出し左側に隙間を入れる*/
+            }
